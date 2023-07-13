@@ -31,6 +31,10 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
+//cors
+const cors = require("cors");
+app.use(cors());
+
 const UserRouter = require('./api/User');
 
 // For accepting POST request data
